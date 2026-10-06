@@ -5,3 +5,4 @@ torch
 tqdm
 accelerate==1.13.0
 vllm
+peft
