@@ -29,11 +29,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--source_col", type=str, default="sources_translated")
     parser.add_argument("--target_col", type=str, default="targets_translated")
 
-    parser.add_argument("--max_source_length", type=int, default=1024)
-    parser.add_argument("--max_target_length", type=int, default=1024)
+    parser.add_argument("--max_source_length", type=int, default=512)
+    parser.add_argument("--max_target_length", type=int, default=512)
 
-    parser.add_argument("--per_device_train_batch_size", type=int, default=8)
-    parser.add_argument("--per_device_eval_batch_size", type=int, default=8)
+    parser.add_argument("--per_device_train_batch_size", type=int, default=4)
+    parser.add_argument("--per_device_eval_batch_size", type=int, default=4)
     parser.add_argument("--gradient_accumulation_steps", type=int, default=8)  # global batch = 64
 
     parser.add_argument("--learning_rate", type=float, default=2e-4)
