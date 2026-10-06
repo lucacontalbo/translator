@@ -214,7 +214,7 @@ def main() -> None:
 
         optim="adamw_torch",
         lr_scheduler_type="linear",
-        warmup_ratio=0.0,
+        warmup_steps=0,
 
         save_total_limit=2,
         load_best_model_at_end=True,
