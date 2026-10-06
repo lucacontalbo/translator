@@ -6,3 +6,5 @@ tqdm
 accelerate==1.13.0
 vllm
 peft
+flash-linear-attention
+# causal-conv1d

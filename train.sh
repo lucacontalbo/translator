@@ -1,0 +1,1 @@
+N=$(ls -d data/propositionizer/*/ | wc -l); i=0; for L in data/propositionizer/*/; do L=$(basename "$L"); i=$((i+1)); echo "=== [$i/$N] Training language: $L ==="; python qwen_finetuner.py --dataset_path data/propositionizer/$L --output_dir outputs/qwen35_lora_$L --bf16 --gradient_checkpointing; done
